@@ -3,6 +3,7 @@ import {
   StyledWelcomeTitle,
   StyledThe,
   StyledSnipeImage,
+  StyledGradien,
 } from "./Welcome.styled";
 import snipe from "../../assets/snipe.png";
 import Button from "../Button/Button";
@@ -15,12 +16,11 @@ const Welcome = () => {
         <StyledSnipeImage src={snipe} />
       </StyledWelcomeTitle>
       <Button
-        onClick={() =>
-          (window.location.href = "https://t.me/MarksmanSniperBot")
-        }
+        onClick={() => window.open("https://t.me/marksman_sniper", "_blank")}
       >
         start sniping
       </Button>
+      <StyledGradien></StyledGradien>
     </StyledWelcomePageContainer>
   );
 };

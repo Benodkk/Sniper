@@ -10,15 +10,39 @@ export const StyledHeaderContainer = styled.header<HeaderProps>`
   justify-content: center;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   transition: 0.3s;
   top: 0;
   transition: 0.3s;
-  top: ${(props) => (props.scroll ? "-94px" : "0")};
+  top: ${(props) => (props.scroll ? "0px" : "-94px")};
+  background-color: #050b15;
+`;
+
+export const StyledLogoImage = styled.img`
+  /* width: 40px; */
+  @media ${devices.desktop} {
+  }
+`;
+
+export const StyledHeaderContainerPhone = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 84px;
+  gap: 5px;
+  background-color: #050b15;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
 `;
 
 export const StyledHeader = styled.div`
-  width: 80%;
+  width: 100%;
+  @media ${devices.desktop} {
+    width: 80%;
+  }
+
   padding: 10px;
   display: flex;
   justify-content: space-between;

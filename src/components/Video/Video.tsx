@@ -1,9 +1,14 @@
-import { StyledVideo, StyledVideoContainer } from "./Video.styled";
+import {
+  StyledGradient,
+  StyledVideo,
+  StyledVideoContainer,
+} from "./Video.styled";
 
 const Video = () => {
   return (
     <StyledVideoContainer>
-      <StyledVideo> VIDEO</StyledVideo>
+      <StyledGradient />
+      <StyledVideo>Video Coming Soon</StyledVideo>
     </StyledVideoContainer>
   );
 };

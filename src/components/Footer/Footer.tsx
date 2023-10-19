@@ -15,22 +15,36 @@ const Footer = () => {
       <StyledLeftFooter>
         <p>Marksman Sniper Bot</p>
         <StyledPLink
-          onClick={() => (window.location.href = "https://rezultsoftware.com/")}
+          onClick={() => window.open("https://rezultsoftware.com/", "_blank")}
         >
           © 2023 RezultSoftware.com
         </StyledPLink>
       </StyledLeftFooter>
       <StyledRightFooter>
-        <div>Whitepaper</div>
+        <StyledPLink
+          onClick={() =>
+            window.open(
+              "https://marksman-sniper-bot.gitbook.io/whitepaper/tokenomics",
+              "_blank"
+            )
+          }
+        >
+          Whitepaper
+        </StyledPLink>
         <div>Contact</div>
         <StyledIconsContainer>
           <SocialIcon
             onClick={() =>
-              (window.location.href = "https://twitter.com/Marksmanbot")
+              window.open("https://twitter.com/Marksmanbot", "_blank")
             }
             imageSrc={xIcon}
           />
-          <SocialIcon imageSrc={telegramIcon} />
+          <SocialIcon
+            onClick={() =>
+              window.open("https://t.me/marksman_sniper", "_blank")
+            }
+            imageSrc={telegramIcon}
+          />
         </StyledIconsContainer>
       </StyledRightFooter>
     </StyledFooterContainer>
