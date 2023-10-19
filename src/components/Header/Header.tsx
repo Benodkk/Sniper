@@ -43,10 +43,10 @@ const Header = () => {
   }, [lastScrollPosition, headerVisible]);
 
   useEffect(() => {
-    if (headerVisible && showMenu) {
+    if (!headerVisible && showMenu) {
       setShowMenu(false);
     }
-  }, [scroll]);
+  }, [headerVisible]);
 
   return (
     <StyledHeaderContainer scroll={headerVisible}>

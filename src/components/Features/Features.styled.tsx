@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import { devices } from "../../styles/deviceWidth";
 
 export const StyledFeaturesContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1024px;
-  margin: 300px 0;
+  width: 100%;
+  margin: 150px 0;
   gap: 100px;
+  @media ${devices.desktop} {
+    margin: 300px 0;
+    width: 1024px;
+  }
 `;
 
 export const StyledFeaturesTitle = styled.h2`
@@ -22,15 +27,21 @@ export const StyledFeaturesTitle = styled.h2`
   font-style: normal;
   font-weight: 700;
   line-height: 60px;
+  text-align: center;
 `;
 
 export const StyledFeaturesGrid = styled.div`
   display: grid;
-  width: 1024px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   gap: 20px;
   row-gap: 60px;
+  @media ${devices.desktop} {
+    width: 1024px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 `;
 
 export const StyledOneFeatureContainer = styled.div`

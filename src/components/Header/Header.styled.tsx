@@ -10,6 +10,7 @@ export const StyledHeaderContainer = styled.header<HeaderProps>`
   justify-content: center;
   position: fixed;
   width: 100%;
+  max-width: 100vw;
   z-index: 5;
   transition: 0.3s;
   top: 0;

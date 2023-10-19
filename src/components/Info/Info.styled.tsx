@@ -6,13 +6,14 @@ export const StyledInfoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 300px;
+  gap: 150px;
   width: 100%;
   margin-top: 150px;
   padding: 0 40px;
   @media ${devices.desktop} {
     margin-top: 300px;
     width: 1024px;
+    gap: 300px;
   }
 `;
 
@@ -27,6 +28,10 @@ export const StyledInfoDescription = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  text-align: justify;
+  @media ${devices.desktop} {
+    text-align: start;
+  }
 `;
 
 export const StyledInfoTitle = styled.h2`
@@ -63,11 +68,16 @@ export const StyledDetailedDescription = styled.p`
 
 export const StyledDetailedDescriptionTide = styled.p`
   color: #fff;
-  width: 80%;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
+
+  text-align: justify;
+  @media ${devices.desktop} {
+    text-align: start;
+    width: 80%;
+  }
 `;
 
 export const DescriptionImage = styled.img`

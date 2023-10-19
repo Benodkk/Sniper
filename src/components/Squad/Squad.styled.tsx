@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/deviceWidth";
 
 export const StyledSquadContainer = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ export const StyledSquadContainer = styled.div`
 
 export const StyledSquadTitle = styled.h2`
   text-align: center;
-  font-size: 161px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 700;
   background: var(
@@ -23,13 +24,20 @@ export const StyledSquadTitle = styled.h2`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media ${devices.desktop} {
+    font-size: 161px;
+  }
 `;
 
 export const StyledMembersContainer = styled.div`
   display: flex;
   gap: 35px;
   position: relative;
-  top: -60px;
+  flex-direction: column;
+  @media ${devices.desktop} {
+    top: -60px;
+    flex-direction: row;
+  }
 `;
 
 export const StyledOneMemberContainer = styled.div`

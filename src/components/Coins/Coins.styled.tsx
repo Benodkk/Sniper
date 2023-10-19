@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import backgroundLayer1 from "../../assets/backgroundLayer1.png";
+import { devices } from "../../styles/deviceWidth";
 
 export const StyledCoinsContainer = styled.div`
   display: flex;
@@ -12,11 +13,17 @@ export const StyledCoinsContainer = styled.div`
 `;
 
 export const StyledCoins = styled.div`
-  width: 1024px;
-  gap: 50px;
+  width: 100%;
+  gap: 70px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  @media ${devices.desktop} {
+    width: 1024px;
+    flex-direction: row;
+    gap: 50px;
+  }
 `;
 
 interface StyledOneCoinProps {
