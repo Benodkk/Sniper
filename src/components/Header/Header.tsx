@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <StyledHeaderContainer scroll={headerVisible}>
       <StyledHeader>
-        <a href="/">
+        <a href="/Sniper">
           <StyledLogoImage src={logoHeader} alt="Logo Header" />
         </a>
         {isDesktop ? (
